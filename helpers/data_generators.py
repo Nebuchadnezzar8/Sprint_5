@@ -19,10 +19,10 @@ class DataGenerator:
         return email
 
     @staticmethod
-    def generate_password(length=6):
+    def generate_password():
         characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         password = ""
-        for _ in range(length):
+        for _ in range(6):
             password += random.choice(characters)
         return password
 
